@@ -1,5 +1,5 @@
 #pragma once
-#include "C:\Users\Linad\source\repos\CppLernBeginNew\CoopFunction\CoopFunc.h"
+#include "C:\Users\Linad\source\repos\LernCPP\CoopFunc\CoopFunc.h"
 
 void ex1();
 void ex2();

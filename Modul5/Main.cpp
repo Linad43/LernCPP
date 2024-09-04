@@ -1,4 +1,5 @@
 #include "Main.h"
+
 int main() {
 	rusText();
 	int choise = 1;
