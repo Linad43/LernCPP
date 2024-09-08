@@ -1,16 +1,16 @@
-#include "Main.h"
+ï»¿#include "Main.h"
 
 void ex1() {
-	std::cout << "1. Ïîëåò íîðìàëüíûé" << std::endl;
+	std::cout << "1. ÐŸÐ¾Ð»ÐµÑ‚ Ð½Ð¾Ñ€Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹" << std::endl;
 	int speed, height;
-	std::cout << "Ââåäèòå ñêîðîñòü ïîëåòà" << std::endl;
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÐºÐ¾Ñ€Ð¾ÑÑ‚ÑŒ Ð¿Ð¾Ð»ÐµÑ‚Ð°" << std::endl;
 	std::cin >> speed;
-	std::cout << "Ââåäèòå âûñîòó ïîëåòà" << std::endl;
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²Ñ‹ÑÐ¾Ñ‚Ñƒ Ð¿Ð¾Ð»ÐµÑ‚Ð°" << std::endl;
 	std::cin >> height;
 	if (speed >= 750 && speed <= 850 && height >= 9000 && height <= 9500) {
-		std::cout << "Ïîëåò íîðìàëüíûé" << std::endl;
+		std::cout << "ÐŸÐ¾Ð»ÐµÑ‚ Ð½Ð¾Ñ€Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹" << std::endl;
 	}
 	else {
-		std::cout << "Íåîáõîäèìà êîððåêòèðîâêà ïîëåòà" << std::endl;
+		std::cout << "ÐÐµÐ¾Ð±Ñ…Ð¾Ð´Ð¸Ð¼Ð° ÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð¸Ñ€Ð¾Ð²ÐºÐ° Ð¿Ð¾Ð»ÐµÑ‚Ð°" << std::endl;
 	}
 }

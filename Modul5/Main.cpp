@@ -1,18 +1,18 @@
-#include "Main.h"
+ï»¿#include "Main.h"
 
 int main() {
 	rusText();
 	int choise = 1;
 	while (choise > 0) {
-		std::cout << "5.6 Ïðàêòè÷åñêàÿ ðàáîòà" << std::endl;
-		std::cout << "Âûáåðèòå çàäàíèå:" << std::endl;
-		std::cout << "1. Ïîëåò íîðìàëüíûé" << std::endl;
-		std::cout << "2. Ìàéñêèå!" << std::endl;
-		std::cout << "3. Ìàéñêèå - óñëîæíåíèå" << std::endl;
-		std::cout << "4. Áàíêîìàò - 2" << std::endl;
-		std::cout << "5. Óñëîæíåíèå çàäà÷è ïðî êèðïè÷" << std::endl;
-		std::cout << "6. Ãðóñòíîå ñîâåðøåííîëåòèå" << std::endl << std::endl;
-		std::cout << "0. Âûõîä" << std::endl;
+		std::cout << "5.6 ÐŸÑ€Ð°ÐºÑ‚Ð¸Ñ‡ÐµÑÐºÐ°Ñ Ñ€Ð°Ð±Ð¾Ñ‚Ð°" << std::endl;
+		std::cout << "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð·Ð°Ð´Ð°Ð½Ð¸Ðµ:" << std::endl;
+		std::cout << "1. ÐŸÐ¾Ð»ÐµÑ‚ Ð½Ð¾Ñ€Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹" << std::endl;
+		std::cout << "2. ÐœÐ°Ð¹ÑÐºÐ¸Ðµ!" << std::endl;
+		std::cout << "3. ÐœÐ°Ð¹ÑÐºÐ¸Ðµ - ÑƒÑÐ»Ð¾Ð¶Ð½ÐµÐ½Ð¸Ðµ" << std::endl;
+		std::cout << "4. Ð‘Ð°Ð½ÐºÐ¾Ð¼Ð°Ñ‚ - 2" << std::endl;
+		std::cout << "5. Ð£ÑÐ»Ð¾Ð¶Ð½ÐµÐ½Ð¸Ðµ Ð·Ð°Ð´Ð°Ñ‡Ð¸ Ð¿Ñ€Ð¾ ÐºÐ¸Ñ€Ð¿Ð¸Ñ‡" << std::endl;
+		std::cout << "6. Ð“Ñ€ÑƒÑÑ‚Ð½Ð¾Ðµ ÑÐ¾Ð²ÐµÑ€ÑˆÐµÐ½Ð½Ð¾Ð»ÐµÑ‚Ð¸Ðµ" << std::endl << std::endl;
+		std::cout << "0. Ð’Ñ‹Ñ…Ð¾Ð´" << std::endl;
 
 		std::cin >> choise;
 

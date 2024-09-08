@@ -1,8 +1,8 @@
-#include "Main.h"
+ï»¿#include "Main.h"
 
 void ex3() {
-	std::cout << "3. Ìàéñêèå - óñëîæíåíèå" << std::endl;
-	std::cout << "Ââåäèòå ñ êàêîãî äíÿ íåäåëè íà÷èíàåòñÿ ìåñÿö(1-7)" << std::endl;
+	std::cout << "3. ÐœÐ°Ð¹ÑÐºÐ¸Ðµ - ÑƒÑÐ»Ð¾Ð¶Ð½ÐµÐ½Ð¸Ðµ" << std::endl;
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ ÐºÐ°ÐºÐ¾Ð³Ð¾ Ð´Ð½Ñ Ð½ÐµÐ´ÐµÐ»Ð¸ Ð½Ð°Ñ‡Ð¸Ð½Ð°ÐµÑ‚ÑÑ Ð¼ÐµÑÑÑ†(1-7)" << std::endl;
 	int day, firstDay;
 	std::cin >> firstDay;
 	firstDay--;
@@ -10,17 +10,17 @@ void ex3() {
 	sat = (6 - firstDay) % 7;
 	sun = (7 - firstDay) % 7;
 	std::cout << "sat = " << sat << " sun = " << sun << std::endl;
-	std::cout << "Ââåäèòå íîìåð äíÿ" << std::endl;
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ Ð´Ð½Ñ" << std::endl;
 	std::cin >> day;
 	if (day > 0 && day <= 31) {
 		if (day % 7 == sat || day % 7 == sun || (day >= 1 && day <= 5) || (day >= 8 && day <= 10)) {
-			std::cout << "Ââåäåí âûõîäíîé" << std::endl;
+			std::cout << "Ð’Ð²ÐµÐ´ÐµÐ½ Ð²Ñ‹Ñ…Ð¾Ð´Ð½Ð¾Ð¹" << std::endl;
 		}
 		else {
-			std::cout << "Ââåäåí ðàáî÷èé" << std::endl;
+			std::cout << "Ð’Ð²ÐµÐ´ÐµÐ½ Ñ€Ð°Ð±Ð¾Ñ‡Ð¸Ð¹" << std::endl;
 		}
 	}
 	else {
-		std::cout << "Îøèáêà ââîäà" << std::endl;
+		std::cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ð²Ð¾Ð´Ð°" << std::endl;
 	}
 }

@@ -1,20 +1,20 @@
-#include "Main.h"
+ï»¿#include "Main.h"
 
 void ex1() {
-	std::cout << "1. Ìèíèìóì èç äâóõ ÷èñåë\n";
+	std::cout << "1. ÐœÐ¸Ð½Ð¸Ð¼ÑƒÐ¼ Ð¸Ð· Ð´Ð²ÑƒÑ… Ñ‡Ð¸ÑÐµÐ»\n";
 	double a, b;
-	std::cout << "Ââåäèòå ïåðâîå ÷èñëî:" << std::endl;
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿ÐµÑ€Ð²Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾:" << std::endl;
 	std::cin >> a;
-	std::cout << "Ââåäèòå âòîðîå ÷èñëî:" << std::endl;
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²Ñ‚Ð¾Ñ€Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾:" << std::endl;
 	std::cin >> b;
 
 	if (a > b) {
-		std::cout << "Âòîðîå ÷èñëî ìåíüøå: " << b << std::endl;
+		std::cout << "Ð’Ñ‚Ð¾Ñ€Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð¼ÐµÐ½ÑŒÑˆÐµ: " << b << std::endl;
 	}
 	else if (b > a) {
-		std::cout << "Ïåðâîå ÷èñëî ìåíüøå: " << a << std::endl;
+		std::cout << "ÐŸÐµÑ€Ð²Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð¼ÐµÐ½ÑŒÑˆÐµ: " << a << std::endl;
 	}
 	else {
-		std::cout << "×èëà ðàâíû: " << a << std::endl;
+		std::cout << "Ð§Ð¸Ð»Ð° Ñ€Ð°Ð²Ð½Ñ‹: " << a << std::endl;
 	}
 }

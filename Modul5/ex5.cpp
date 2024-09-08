@@ -1,17 +1,17 @@
-#include "Main.h"
+ï»¿#include "Main.h"
 
 void ex5() {
-	std::cout << "5. Óñëîæíåíèå çàäà÷è ïğî êèğïè÷" << std::endl;
-	std::cout << "Ğàçìåğû ïåğâîé êîğîáêè" << std::endl;
+	std::cout << "5. Ğ£ÑĞ»Ğ¾Ğ¶Ğ½ĞµĞ½Ğ¸Ğµ Ğ·Ğ°Ğ´Ğ°Ñ‡Ğ¸ Ğ¿Ñ€Ğ¾ ĞºĞ¸Ñ€Ğ¿Ğ¸Ñ‡" << std::endl;
+	std::cout << "Ğ Ğ°Ğ·Ğ¼ĞµÑ€Ñ‹ Ğ¿ĞµÑ€Ğ²Ğ¾Ğ¹ ĞºĞ¾Ñ€Ğ¾Ğ±ĞºĞ¸" << std::endl;
 	int a, b, c, m, n, k;
 	bool flag;
-	std::cout << "À = ";
+	std::cout << "Ğ = ";
 	std::cin >> a;
 	std::cout << "B = ";
 	std::cin >> b;
 	std::cout << "C = ";
 	std::cin >> c;
-	std::cout << "Ğàçìåğû âòîğîé êîğîáêè" << std::endl;
+	std::cout << "Ğ Ğ°Ğ·Ğ¼ĞµÑ€Ñ‹ Ğ²Ñ‚Ğ¾Ñ€Ğ¾Ğ¹ ĞºĞ¾Ñ€Ğ¾Ğ±ĞºĞ¸" << std::endl;
 	std::cout << "M = ";
 	std::cin >> m;
 	std::cout << "N = ";

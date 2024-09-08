@@ -1,12 +1,12 @@
-#include "Main.h"
+ï»¿#include "Main.h"
 
 void ex3() {
-	std::cout << "3. Çëîñòíûå âðåäèòåëè.\n";
+	std::cout << "3. Ð—Ð»Ð¾ÑÑ‚Ð½Ñ‹Ðµ Ð²Ñ€ÐµÐ´Ð¸Ñ‚ÐµÐ»Ð¸.\n";
 	int speedUp = 50;
 	int speedDown = 20;
 	float countDay = 2.5;
 	float countHight = 2;
 	int beginHeight = 100;
 	int nowHeight = speedUp * countDay - speedDown * countHight + beginHeight;
-	std::cout << "Âûñîòà áàìáóêà íà òðåòèé äåíü " << nowHeight << std::endl;
+	std::cout << "Ð’Ñ‹ÑÐ¾Ñ‚Ð° Ð±Ð°Ð¼Ð±ÑƒÐºÐ° Ð½Ð° Ñ‚Ñ€ÐµÑ‚Ð¸Ð¹ Ð´ÐµÐ½ÑŒ " << nowHeight << std::endl;
 }

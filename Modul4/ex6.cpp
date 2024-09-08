@@ -1,34 +1,34 @@
-#include "Main.h"
+ï»¿#include "Main.h"
 
 void ex6() {
-	std::cout << "6. Óëó÷øèì áàðáåðîâ\n";
+	std::cout << "6. Ð£Ð»ÑƒÑ‡ÑˆÐ¸Ð¼ Ð±Ð°Ñ€Ð±ÐµÑ€Ð¾Ð²\n";
 
 	int mansCount;
 	int barbersCount;
 
-	std::cout << "***Áàðáåðøîï-êàëüêóëÿòîð***" << std::endl;
-	std::cout << "Ââåäèòå ÷èñëî ìóæ÷èí â ãîðîäå: " << std::endl;
+	std::cout << "***Ð‘Ð°Ñ€Ð±ÐµÑ€ÑˆÐ¾Ð¿-ÐºÐ°Ð»ÑŒÐºÑƒÐ»ÑÑ‚Ð¾Ñ€***" << std::endl;
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð¼ÑƒÐ¶Ñ‡Ð¸Ð½ Ð² Ð³Ð¾Ñ€Ð¾Ð´Ðµ: " << std::endl;
 	std::cin >> mansCount;
 
-	std::cout << "Ñêîëüêî óæå áàðáåðîâ óäàëîñü íàíÿòü?" << std::endl;
+	std::cout << "Ð¡ÐºÐ¾Ð»ÑŒÐºÐ¾ ÑƒÐ¶Ðµ Ð±Ð°Ñ€Ð±ÐµÑ€Ð¾Ð² ÑƒÐ´Ð°Ð»Ð¾ÑÑŒ Ð½Ð°Ð½ÑÑ‚ÑŒ?" << std::endl;
 	std::cin >> barbersCount;
 
 	int mansPerDay = mansCount / 30;
 	int mansPerBarber = 8;
 	int mansPerBarbePerMonth = mansPerBarber * 30;
-	std::cout << "Îäèí áàðáåð ñòðèæåò " << mansPerBarbePerMonth << " â ìåñÿö" << std::endl;
+	std::cout << "ÐžÐ´Ð¸Ð½ Ð±Ð°Ñ€Ð±ÐµÑ€ ÑÑ‚Ñ€Ð¸Ð¶ÐµÑ‚ " << mansPerBarbePerMonth << " Ð² Ð¼ÐµÑÑÑ†" << std::endl;
 	int requiredBarberCount = mansCount / mansPerBarbePerMonth;
 	if (mansCount % mansPerBarbePerMonth != 0) {
 		requiredBarberCount++;
 	}
-	std::cout << "Íåîáõîäèìîå ÷èñëî áàðáåðîâ: " << requiredBarberCount << std::endl;
+	std::cout << "ÐÐµÐ¾Ð±Ñ…Ð¾Ð´Ð¸Ð¼Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð±Ð°Ñ€Ð±ÐµÑ€Ð¾Ð²: " << requiredBarberCount << std::endl;
 
-	std::cout << requiredBarberCount << " áàðáåðà ìîãóò ïîñòðè÷ü " <<
-		requiredBarberCount * mansPerBarbePerMonth << " ìóæ÷èí çà ìåñÿö" << std::endl;
+	std::cout << requiredBarberCount << " Ð±Ð°Ñ€Ð±ÐµÑ€Ð° Ð¼Ð¾Ð³ÑƒÑ‚ Ð¿Ð¾ÑÑ‚Ñ€Ð¸Ñ‡ÑŒ " <<
+		requiredBarberCount * mansPerBarbePerMonth << " Ð¼ÑƒÐ¶Ñ‡Ð¸Ð½ Ð·Ð° Ð¼ÐµÑÑÑ†" << std::endl;
 	if (requiredBarberCount > barbersCount) {
-		std::cout << "Íóæíî áîëüøå áàðáåðîâ!!!" << std::endl;
+		std::cout << "ÐÑƒÐ¶Ð½Ð¾ Ð±Ð¾Ð»ÑŒÑˆÐµ Ð±Ð°Ñ€Ð±ÐµÑ€Ð¾Ð²!!!" << std::endl;
 	}
 	else {
-		std::cout << "Áàðáåðîâ õâàòàåò." << std::endl;
+		std::cout << "Ð‘Ð°Ñ€Ð±ÐµÑ€Ð¾Ð² Ñ…Ð²Ð°Ñ‚Ð°ÐµÑ‚." << std::endl;
 	}
 }

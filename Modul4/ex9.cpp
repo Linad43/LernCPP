@@ -1,14 +1,14 @@
-#include "Main.h"
+ï»¿#include "Main.h"
 
 void ex9() {
-	std::cout << "9. Ïðîãðåññèâíûé íàëîã (íåîáÿçàòåëüíàÿ)\n";
+	std::cout << "9. ÐŸÑ€Ð¾Ð³Ñ€ÐµÑÑÐ¸Ð²Ð½Ñ‹Ð¹ Ð½Ð°Ð»Ð¾Ð³ (Ð½ÐµÐ¾Ð±ÑÐ·Ð°Ñ‚ÐµÐ»ÑŒÐ½Ð°Ñ)\n";
 
 	int salary;
 	double tax = 0;
-	std::cout << "Ââåäèòå çàðïëàòó: " << std::endl;
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð·Ð°Ñ€Ð¿Ð»Ð°Ñ‚Ñƒ: " << std::endl;
 	std::cin >> salary;
 	if (salary < 0) {
-		std::cout << "Îøèáêà ââîäà " << std::endl;
+		std::cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ð²Ð¾Ð´Ð° " << std::endl;
 	}
 	else {
 		int buf = salary;
@@ -24,5 +24,5 @@ void ex9() {
 			tax += 0.13 * (buf);
 		}
 	}
-	std::cout << "Ñóììà íàëîãà: " << tax << std::endl;
+	std::cout << "Ð¡ÑƒÐ¼Ð¼Ð° Ð½Ð°Ð»Ð¾Ð³Ð°: " << tax << std::endl;
 }

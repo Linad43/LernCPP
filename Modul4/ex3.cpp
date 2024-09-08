@@ -1,14 +1,14 @@
-#include "Main.h"
+ï»¿#include "Main.h"
 
 void ex3() {
-	std::cout << "3. Ïðîâåðêà íà ÷¸òíîå ÷èñëî\n";
+	std::cout << "3. ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° Ð½Ð° Ñ‡Ñ‘Ñ‚Ð½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾\n";
 	int a;
-	std::cout << "Ââåäèòå ÷èñëî: " << std::endl;
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾: " << std::endl;
 	std::cin >> a;
 	if (a % 2 == 0) {
-		std::cout << "×èñëî " << a << " - ÷¸òíîå" << std::endl;
+		std::cout << "Ð§Ð¸ÑÐ»Ð¾ " << a << " - Ñ‡Ñ‘Ñ‚Ð½Ð¾Ðµ" << std::endl;
 	}
 	else {
-		std::cout << "×èñëî " << a << " - íå÷¸òíîå" << std::endl;
+		std::cout << "Ð§Ð¸ÑÐ»Ð¾ " << a << " - Ð½ÐµÑ‡Ñ‘Ñ‚Ð½Ð¾Ðµ" << std::endl;
 	}
 }

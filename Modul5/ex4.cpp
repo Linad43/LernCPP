@@ -1,8 +1,8 @@
-#include "Main.h"
+ï»¿#include "Main.h"
 
 void ex4() {
-	std::cout << "5. Áàíêîìàò - 2" << std::endl;
-	std::cout << "Êàêóþ ñóììó õîòèòå ñíÿòü?" << std::endl;
+	std::cout << "5. Ð‘Ð°Ð½ÐºÐ¾Ð¼Ð°Ñ‚ - 2" << std::endl;
+	std::cout << "ÐšÐ°ÐºÑƒÑŽ ÑÑƒÐ¼Ð¼Ñƒ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ ÑÐ½ÑÑ‚ÑŒ?" << std::endl;
 	int sum, num5k, num2k, num1k, num5h, num2h, num1h;
 	std::cin >> sum;
 	int buf = sum;
@@ -19,21 +19,21 @@ void ex4() {
 		buf %= 200;
 		num1h = buf / 100;
 		buf %= 100;
-		std::cout << "Âû ïîëó÷èòå íà ðóêè" << std::endl;
-		std::cout << num5k << " êóïþð íîìèíàëîì 5000" << std::endl;
-		std::cout << num2k << " êóïþð íîìèíàëîì 2000" << std::endl;
-		std::cout << num1k << " êóïþð íîìèíàëîì 1000" << std::endl;
-		std::cout << num5h << " êóïþð íîìèíàëîì 500" << std::endl;
-		std::cout << num2h << " êóïþð íîìèíàëîì 200" << std::endl;
-		std::cout << num1h << " êóïþð íîìèíàëîì 100" << std::endl;
+		std::cout << "Ð’Ñ‹ Ð¿Ð¾Ð»ÑƒÑ‡Ð¸Ñ‚Ðµ Ð½Ð° Ñ€ÑƒÐºÐ¸" << std::endl;
+		std::cout << num5k << " ÐºÑƒÐ¿ÑŽÑ€ Ð½Ð¾Ð¼Ð¸Ð½Ð°Ð»Ð¾Ð¼ 5000" << std::endl;
+		std::cout << num2k << " ÐºÑƒÐ¿ÑŽÑ€ Ð½Ð¾Ð¼Ð¸Ð½Ð°Ð»Ð¾Ð¼ 2000" << std::endl;
+		std::cout << num1k << " ÐºÑƒÐ¿ÑŽÑ€ Ð½Ð¾Ð¼Ð¸Ð½Ð°Ð»Ð¾Ð¼ 1000" << std::endl;
+		std::cout << num5h << " ÐºÑƒÐ¿ÑŽÑ€ Ð½Ð¾Ð¼Ð¸Ð½Ð°Ð»Ð¾Ð¼ 500" << std::endl;
+		std::cout << num2h << " ÐºÑƒÐ¿ÑŽÑ€ Ð½Ð¾Ð¼Ð¸Ð½Ð°Ð»Ð¾Ð¼ 200" << std::endl;
+		std::cout << num1h << " ÐºÑƒÐ¿ÑŽÑ€ Ð½Ð¾Ð¼Ð¸Ð½Ð°Ð»Ð¾Ð¼ 100" << std::endl;
 	}
 	else if (sum < 0) {
-		std::cout << "Ââåäåííîå çíà÷åíèå íå ìîæåò áûòü ìåíüøå íóëÿ" << std::endl;
+		std::cout << "Ð’Ð²ÐµÐ´ÐµÐ½Ð½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð½Ðµ Ð¼Ð¾Ð¶ÐµÑ‚ Ð±Ñ‹Ñ‚ÑŒ Ð¼ÐµÐ½ÑŒÑˆÐµ Ð½ÑƒÐ»Ñ" << std::endl;
 	}
 	else if (sum % 100 != 0) {
-		std::cout << "Ââåäåííîå çíà÷åíèå äîëæíî áûòü êðàòíî 100" << std::endl;
+		std::cout << "Ð’Ð²ÐµÐ´ÐµÐ½Ð½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð´Ð¾Ð»Ð¶Ð½Ð¾ Ð±Ñ‹Ñ‚ÑŒ ÐºÑ€Ð°Ñ‚Ð½Ð¾ 100" << std::endl;
 	}
 	else {
-		std::cout << "Âû íå ìîæåòå ñíÿòü áîëüøå 150 000 ð" << std::endl;
+		std::cout << "Ð’Ñ‹ Ð½Ðµ Ð¼Ð¾Ð¶ÐµÑ‚Ðµ ÑÐ½ÑÑ‚ÑŒ Ð±Ð¾Ð»ÑŒÑˆÐµ 150 000 Ñ€" << std::endl;
 	}
 }

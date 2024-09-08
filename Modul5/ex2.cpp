@@ -1,20 +1,20 @@
-#include "Main.h"
+ï»¿#include "Main.h"
 
 void ex2() {
-	std::cout << "2. Ìàéñêèå!" << std::endl;
-	std::cout << "Ââåäèòå íîìåð äíÿ" << std::endl;
+	std::cout << "2. ÐœÐ°Ð¹ÑÐºÐ¸Ðµ!" << std::endl;
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ Ð´Ð½Ñ" << std::endl;
 
 	int day;
 	std::cin >> day;
 	if (day > 0 && day <= 31) {
 		if (day % 7 == 6 || day % 7 == 0 || (day >= 1 && day <= 5) || (day >= 8 && day <= 10)) {
-			std::cout << "Ââåäåí âûõîäíîé" << std::endl;
+			std::cout << "Ð’Ð²ÐµÐ´ÐµÐ½ Ð²Ñ‹Ñ…Ð¾Ð´Ð½Ð¾Ð¹" << std::endl;
 		}
 		else {
-			std::cout << "Ââåäåí ðàáî÷èé" << std::endl;
+			std::cout << "Ð’Ð²ÐµÐ´ÐµÐ½ Ñ€Ð°Ð±Ð¾Ñ‡Ð¸Ð¹" << std::endl;
 		}
 	}
 	else {
-		std::cout << "Îøèáêà ââîäà" << std::endl;
+		std::cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ð²Ð¾Ð´Ð°" << std::endl;
 	}
 }

@@ -1,27 +1,27 @@
-#include "Main.h"
+ï»¿#include "Main.h"
 
 void ex3() {
-	std::cout << "3. Êîëëåêòîðû" << std::endl;
+	std::cout << "3. ÐšÐ¾Ð»Ð»ÐµÐºÑ‚Ð¾Ñ€Ñ‹" << std::endl;
 	int moneyBank, moneyPerson;
 	char person[20];
-	std::cout << "Ââåäèòå èìÿ äîëæíèêà: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð¼Ñ Ð´Ð¾Ð»Ð¶Ð½Ð¸ÐºÐ°: ";
 	std::cin >> person;
-	std::cout << "Ââåäèòå ñóììó äîëãà: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑƒÐ¼Ð¼Ñƒ Ð´Ð¾Ð»Ð³Ð°: ";
 	std::cin >> moneyBank;
 	if (moneyBank < 0) {
-		std::cout << "Äîëã íå ìîæåò áûòü îòðèöàòåëüíûì\n";
+		std::cout << "Ð”Ð¾Ð»Ð³ Ð½Ðµ Ð¼Ð¾Ð¶ÐµÑ‚ Ð±Ñ‹Ñ‚ÑŒ Ð¾Ñ‚Ñ€Ð¸Ñ†Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ð¼\n";
 		return;
 	}
 	moneyBank = -moneyBank;
 	while (moneyBank < 0) {
-		std::cout << "Âàø äîëã áàíêó: " << -moneyBank << std::endl;
-		std::cout << "Ââåäèòå ñâîé âçíîñ " << person << ": ";
+		std::cout << "Ð’Ð°Ñˆ Ð´Ð¾Ð»Ð³ Ð±Ð°Ð½ÐºÑƒ: " << -moneyBank << std::endl;
+		std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÐ²Ð¾Ð¹ Ð²Ð·Ð½Ð¾Ñ " << person << ": ";
 		std::cin >> moneyPerson;
 		if (moneyPerson < 0) {
-			std::cout << "Âû íå ìîæåòå áðàòü â äîëã ó áàíêà, ïîêà ÿâëÿåòåñü äîëæíèêîì\n";
+			std::cout << "Ð’Ñ‹ Ð½Ðµ Ð¼Ð¾Ð¶ÐµÑ‚Ðµ Ð±Ñ€Ð°Ñ‚ÑŒ Ð² Ð´Ð¾Ð»Ð³ Ñƒ Ð±Ð°Ð½ÐºÐ°, Ð¿Ð¾ÐºÐ° ÑÐ²Ð»ÑÐµÑ‚ÐµÑÑŒ Ð´Ð¾Ð»Ð¶Ð½Ð¸ÐºÐ¾Ð¼\n";
 			continue;
 		}
 		moneyBank += moneyPerson;
 	}
-	std::cout << "Ïîçäðàâëÿåì, âû ïîëíîñòüþ ïîãàñèëè äîëã, íà âàøåì ñ÷åòó: " << moneyBank << std::endl;
+	std::cout << "ÐŸÐ¾Ð·Ð´Ñ€Ð°Ð²Ð»ÑÐµÐ¼, Ð²Ñ‹ Ð¿Ð¾Ð»Ð½Ð¾ÑÑ‚ÑŒÑŽ Ð¿Ð¾Ð³Ð°ÑÐ¸Ð»Ð¸ Ð´Ð¾Ð»Ð³, Ð½Ð° Ð²Ð°ÑˆÐµÐ¼ ÑÑ‡ÐµÑ‚Ñƒ: " << moneyBank << std::endl;
 }

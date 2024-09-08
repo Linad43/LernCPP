@@ -1,64 +1,64 @@
-#include "Main.h"
+ï»¿#include "Main.h"
 #define PART_DRIVER 0.25
 #define PART_FUEL 0.2
 #define PART_REPAIR 0.2
 #define PART_TAXES 0.2
 
 void ex1() {
-	std::cout << "1. Ñèìóëÿòîð ìàðøðóòêè.\n";
+	std::cout << "1. Ð¡Ð¸Ð¼ÑƒÐ»ÑÑ‚Ð¾Ñ€ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚ÐºÐ¸.\n";
 
 	std::string stoping[] =	{ 
-		"Ïåðâàÿ", 
-		"Âòîðàÿ", 
-		"Òðåòüÿ", 
-		"×åòâåðòàÿ" 
+		"ÐŸÐµÑ€Ð²Ð°Ñ", 
+		"Ð’Ñ‚Ð¾Ñ€Ð°Ñ", 
+		"Ð¢Ñ€ÐµÑ‚ÑŒÑ", 
+		"Ð§ÐµÑ‚Ð²ÐµÑ€Ñ‚Ð°Ñ" 
 	};
 	int countClient = 0;
 	int sumMoney = 0;
 	int cost = 20;
 	for (int i = 0; i < size(stoping); i++) {
-		std::cout << "Ïðèáûâàåì íà îñòàíîâêó: ";
+		std::cout << "ÐŸÑ€Ð¸Ð±Ñ‹Ð²Ð°ÐµÐ¼ Ð½Ð° Ð¾ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÑƒ: ";
 		std::cout << stoping[i] << std::endl;
 		int passOut = 0;
 		if (i == 0) {
-			std::cout << "Ýòî ïåðâàÿ îñòàíîâêà, àâòîáóñ ïóñò\n";
+			std::cout << "Ð­Ñ‚Ð¾ Ð¿ÐµÑ€Ð²Ð°Ñ Ð¾ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ°, Ð°Ð²Ñ‚Ð¾Ð±ÑƒÑ Ð¿ÑƒÑÑ‚\n";
 		}
 		else if (i != size(stoping) - 1) {
-			std::cout << "Ñêîëüêî ïàññàæèðîâ âûøëî íà îñòàíîâêå?\n";
+			std::cout << "Ð¡ÐºÐ¾Ð»ÑŒÐºÐ¾ Ð¿Ð°ÑÑÐ°Ð¶Ð¸Ñ€Ð¾Ð² Ð²Ñ‹ÑˆÐ»Ð¾ Ð½Ð° Ð¾ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐµ?\n";
 			std::cin >> passOut;
 		}
 		int passIn = 0;
 		if (i != size(stoping) - 1) {
-			std::cout << "Ñêîëüêî ïàññàæèðîâ çàøëî íà îñòàíîâêå?\n";
+			std::cout << "Ð¡ÐºÐ¾Ð»ÑŒÐºÐ¾ Ð¿Ð°ÑÑÐ°Ð¶Ð¸Ñ€Ð¾Ð² Ð·Ð°ÑˆÐ»Ð¾ Ð½Ð° Ð¾ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐµ?\n";
 			std::cin >> passIn;
 		}
 		else {
-			std::cout << "Ýòî êîíå÷íàÿ îñòàíîâêà, âñå ïàññàæèðû âûøëè\n";
+			std::cout << "Ð­Ñ‚Ð¾ ÐºÐ¾Ð½ÐµÑ‡Ð½Ð°Ñ Ð¾ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ°, Ð²ÑÐµ Ð¿Ð°ÑÑÐ°Ð¶Ð¸Ñ€Ñ‹ Ð²Ñ‹ÑˆÐ»Ð¸\n";
 		}
 
 		sumMoney += passIn * cost;
 		if (i != size(stoping) - 1) {
-			std::cout << "Îòïðàâëÿåìñÿ ñ îñòàíîâêè ";
+			std::cout << "ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð»ÑÐµÐ¼ÑÑ Ñ Ð¾ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ¸ ";
 			std::cout << stoping[i] << ". ";
 			countClient += passIn - passOut;
-			std::cout << "Ïàññàæèðîâ â àâòîáóñå: ";
+			std::cout << "ÐŸÐ°ÑÑÐ°Ð¶Ð¸Ñ€Ð¾Ð² Ð² Ð°Ð²Ñ‚Ð¾Ð±ÑƒÑÐµ: ";
 			std::cout << countClient << std::endl;
 		}
 		else {
-			std::cout << "Ïîåçäêà îêîí÷åíà\n";
+			std::cout << "ÐŸÐ¾ÐµÐ·Ð´ÐºÐ° Ð¾ÐºÐ¾Ð½Ñ‡ÐµÐ½Ð°\n";
 		}
 	}
 
-	//èòîã
+	//Ð¸Ñ‚Ð¾Ð³
 	int salaryDriver = sumMoney * PART_DRIVER;
 	int costFuel = sumMoney * PART_FUEL;
 	int taxes = sumMoney * PART_TAXES;
 	int costRepair = sumMoney * PART_REPAIR;
 	int result = sumMoney - (salaryDriver + costFuel + taxes + costRepair);
-	std::cout << "Âñåãî çàðàáîòàíî " << sumMoney << std::endl;
-	std::cout << "Çàðïëàòà âîäèòåëÿ " << salaryDriver << std::endl;
-	std::cout << "Ðàñõîäû íà òîïëèâî " << costFuel << std::endl;
-	std::cout << "Íàëîãè " << taxes << std::endl;
-	std::cout << "Ðàñõîäû íà ðåìîíò ìàøèíû " << costRepair << std::endl;
-	std::cout << "Èòîãî äîõîä " << result << std::endl;
+	std::cout << "Ð’ÑÐµÐ³Ð¾ Ð·Ð°Ñ€Ð°Ð±Ð¾Ñ‚Ð°Ð½Ð¾ " << sumMoney << std::endl;
+	std::cout << "Ð—Ð°Ñ€Ð¿Ð»Ð°Ñ‚Ð° Ð²Ð¾Ð´Ð¸Ñ‚ÐµÐ»Ñ " << salaryDriver << std::endl;
+	std::cout << "Ð Ð°ÑÑ…Ð¾Ð´Ñ‹ Ð½Ð° Ñ‚Ð¾Ð¿Ð»Ð¸Ð²Ð¾ " << costFuel << std::endl;
+	std::cout << "ÐÐ°Ð»Ð¾Ð³Ð¸ " << taxes << std::endl;
+	std::cout << "Ð Ð°ÑÑ…Ð¾Ð´Ñ‹ Ð½Ð° Ñ€ÐµÐ¼Ð¾Ð½Ñ‚ Ð¼Ð°ÑˆÐ¸Ð½Ñ‹ " << costRepair << std::endl;
+	std::cout << "Ð˜Ñ‚Ð¾Ð³Ð¾ Ð´Ð¾Ñ…Ð¾Ð´ " << result << std::endl;
 }

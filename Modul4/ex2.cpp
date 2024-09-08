@@ -1,18 +1,18 @@
-#include "Main.h"
+ï»¿#include "Main.h"
 
 void ex2() {
-	std::cout << "2. Ñêëàäûâàåì â óìå" << std::endl;
+	std::cout << "2. Ğ¡ĞºĞ»Ğ°Ğ´Ñ‹Ğ²Ğ°ĞµĞ¼ Ğ² ÑƒĞ¼Ğµ" << std::endl;
 	double a, b, sum;
-	std::cout << "Ââåäèòå ïåğâîå ÷èñëî:" << std::endl;
+	std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ¿ĞµÑ€Ğ²Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾:" << std::endl;
 	std::cin >> a;
-	std::cout << "Ââåäèòå âòîğîå ÷èñëî:" << std::endl;
+	std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ²Ñ‚Ğ¾Ñ€Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾:" << std::endl;
 	std::cin >> b;
-	std::cout << "Ââåäèòå èõ ñóììó:" << std::endl;
+	std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ¸Ñ… ÑÑƒĞ¼Ğ¼Ñƒ:" << std::endl;
 	std::cin >> sum;
 	if (sum == a + b) {
-		std::cout << "Âåğíî!" << std::endl;
+		std::cout << "Ğ’ĞµÑ€Ğ½Ğ¾!" << std::endl;
 	}
 	else {
-		std::cout << "Îøèáêà, âåğíûé ğåçóëüòàò: " << a + b << std::endl;
+		std::cout << "ĞÑˆĞ¸Ğ±ĞºĞ°, Ğ²ĞµÑ€Ğ½Ñ‹Ğ¹ Ñ€ĞµĞ·ÑƒĞ»ÑŒÑ‚Ğ°Ñ‚: " << a + b << std::endl;
 	}
 }

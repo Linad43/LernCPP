@@ -1,13 +1,13 @@
-#include "Main.h"
+ï»¿#include "Main.h"
 
 void ex2() {
-	std::cout << "2. Ñëèøêîì áîëüøèå ÷ècëà" << std::endl;
+	std::cout << "2. Ð¡Ð»Ð¸ÑˆÐºÐ¾Ð¼ Ð±Ð¾Ð»ÑŒÑˆÐ¸Ðµ Ñ‡Ð¸cÐ»Ð°" << std::endl;
 	int num, lenthNum = 0;
-	std::cout << "Ââåäèòå ÷èñëî: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾: ";
 	std::cin >> num;
 	do {
 		num /= 10;
 		lenthNum++;
 	} while (num != 0);
-	std::cout << "Öèôð â ÷èñëå: " << lenthNum << std::endl;
+	std::cout << "Ð¦Ð¸Ñ„Ñ€ Ð² Ñ‡Ð¸ÑÐ»Ðµ: " << lenthNum << std::endl;
 }

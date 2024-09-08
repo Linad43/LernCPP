@@ -1,24 +1,24 @@
-#include "Main.h"
+ï»¿#include "Main.h"
 
 void ex4() {
-	std::cout << "4. Êàëüêóëÿòîð îïûòà\n";
+	std::cout << "4. ÐšÐ°Ð»ÑŒÐºÑƒÐ»ÑÑ‚Ð¾Ñ€ Ð¾Ð¿Ñ‹Ñ‚Ð°\n";
 
 	double exp;
-	std::cout << "Ââåäèòå ÷èñëî î÷êîâ îïûòà: " << std::endl;
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð¾Ñ‡ÐºÐ¾Ð² Ð¾Ð¿Ñ‹Ñ‚Ð°: " << std::endl;
 	std::cin >> exp;
 	if (exp < 0) {
-		std::cout << "Îøèáêà ââîäà, îïûò íå ìîæåò áûòü îòðèöàòåëüíûì!" << std::endl;
+		std::cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ð²Ð¾Ð´Ð°, Ð¾Ð¿Ñ‹Ñ‚ Ð½Ðµ Ð¼Ð¾Ð¶ÐµÑ‚ Ð±Ñ‹Ñ‚ÑŒ Ð¾Ñ‚Ñ€Ð¸Ñ†Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ð¼!" << std::endl;
 	}
 	else if (exp >= 0 && exp < 1000) {
-		std::cout << "Âàø óðîâåíü: 1" << std::endl;
+		std::cout << "Ð’Ð°Ñˆ ÑƒÑ€Ð¾Ð²ÐµÐ½ÑŒ: 1" << std::endl;
 	}
 	else if (exp >= 1000 && exp < 2500) {
-		std::cout << "Âàø óðîâåíü: 2" << std::endl;
+		std::cout << "Ð’Ð°Ñˆ ÑƒÑ€Ð¾Ð²ÐµÐ½ÑŒ: 2" << std::endl;
 	}
 	else if (exp >= 2500 && exp < 5000) {
-		std::cout << "Âàø óðîâåíü: 3" << std::endl;
+		std::cout << "Ð’Ð°Ñˆ ÑƒÑ€Ð¾Ð²ÐµÐ½ÑŒ: 3" << std::endl;
 	}
 	else {
-		std::cout << "Âàø óðîâåíü: 4" << std::endl;
+		std::cout << "Ð’Ð°Ñˆ ÑƒÑ€Ð¾Ð²ÐµÐ½ÑŒ: 4" << std::endl;
 	}
 }
