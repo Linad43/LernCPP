@@ -1,30 +1,30 @@
-#include "Main.h"
+ï»¿#include "Main.h"
 
 void ex6() {
-	std::cout << "6. Âêëàäû" << std::endl;
+	std::cout << "6. Ð’ÐºÐ»Ð°Ð´Ñ‹" << std::endl;
 	int sumIn, sumOut;
 	double percent;
-	std::cout << "Ââåäèòå ðàçìåð âêëàäà: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð²ÐºÐ»Ð°Ð´Ð°: ";
 	std::cin >> sumIn;
-	std::cout << "Ââåäèòå ïðîöåíòíóþ ñòàâêó: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ñ€Ð¾Ñ†ÐµÐ½Ñ‚Ð½ÑƒÑŽ ÑÑ‚Ð°Ð²ÐºÑƒ: ";
 	std::cin>>percent;
 	percent /= 100;
-	std::cout << "Ââåäèòå æåëàåìóþ ñóììó: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¶ÐµÐ»Ð°ÐµÐ¼ÑƒÑŽ ÑÑƒÐ¼Ð¼Ñƒ: ";
 	std::cin >> sumOut;
 	int buf = sumIn, i = 0;
 	while (buf < sumOut) {
 		buf *= (percent + 1);
 		i++;
-		//printf("%d ãîä: %d\n", i, buf);
+		//printf("%d Ð³Ð¾Ð´: %d\n", i, buf);
 	}
 	if (i >= 5) {
-		std::cout << "Ïðèä¸òñÿ ïîäîæäàòü: " << i << " ëåò";
+		std::cout << "ÐŸÑ€Ð¸Ð´Ñ‘Ñ‚ÑÑ Ð¿Ð¾Ð´Ð¾Ð¶Ð´Ð°Ñ‚ÑŒ: " << i << " Ð»ÐµÑ‚";
 	}
 	else if (i == 1) {
-		std::cout << "Ïðèä¸òñÿ ïîäîæäàòü: " << i << " ãîä";
+		std::cout << "ÐŸÑ€Ð¸Ð´Ñ‘Ñ‚ÑÑ Ð¿Ð¾Ð´Ð¾Ð¶Ð´Ð°Ñ‚ÑŒ: " << i << " Ð³Ð¾Ð´";
 	}
 	else {
-		std::cout << "Ïðèä¸òñÿ ïîäîæäàòü: " << i << " ãîäà";
+		std::cout << "ÐŸÑ€Ð¸Ð´Ñ‘Ñ‚ÑÑ Ð¿Ð¾Ð´Ð¾Ð¶Ð´Ð°Ñ‚ÑŒ: " << i << " Ð³Ð¾Ð´Ð°";
 	}
 	std::cout<<std::endl;
 }

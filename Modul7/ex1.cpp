@@ -1,8 +1,8 @@
-#include "Main.h"
+Ôªø#include "Main.h"
 #define EATING 4
 
 void ex1() {
-	std::cout << "1. «‡Ô‡Ò˚ ÔÓ‰Ó‚ÓÎ¸ÒÚ‚Ëˇ.\n";
+	std::cout << "1. –ó–∞–ø–∞—Å—ã –ø—Ä–æ–¥–æ–≤–æ–ª—å—Å—Ç–≤–∏—è.\n";
 	int mass = 100;
-	for (int i = 0; mass > 0; printf("œÓÒÎÂ %d ÏÂÒˇˆ‡ Û ‚‡Ò ‚ Á‡Ô‡ÒÂ ÓÒÚ‡ÌÂÚÒˇ %d Í„ „Â˜ÍË\n", ++i, mass -= EATING));
+	for (int i = 0; mass > 0; printf("–ü–æ—Å–ª–µ %d –º–µ—Å—è—Ü–∞ —É –≤–∞—Å –≤ –∑–∞–ø–∞—Å–µ –æ—Å—Ç–∞–Ω–µ—Ç—Å—è %d –∫–≥ –≥—Ä–µ—á–∫–∏\n", ++i, mass -= EATING));
 }

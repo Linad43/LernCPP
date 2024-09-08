@@ -1,28 +1,28 @@
-#include "Main.h"
+ï»¿#include "Main.h"
 
 void ex7() {
-	std::cout << "7. Áèîëàáîðàòîðèÿ*.\n";
+	std::cout << "7. Ð‘Ð¸Ð¾Ð»Ð°Ð±Ð¾Ñ€Ð°Ñ‚Ð¾Ñ€Ð¸Ñ*.\n";
 	int countBacter, countAnti;
 	while (1) {
-		std::cout << "Ââåäèòå êîë-âî áàêòåðèé: ";
+		std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»-Ð²Ð¾ Ð±Ð°ÐºÑ‚ÐµÑ€Ð¸Ð¹: ";
 		std::cin >> countBacter;
 		if (countBacter < 0) {
-			std::cout << "Êîë-âî áàêòåðèé íå ìîæåò áûòü îòðèöàòåëüíûì\n";
+			std::cout << "ÐšÐ¾Ð»-Ð²Ð¾ Ð±Ð°ÐºÑ‚ÐµÑ€Ð¸Ð¹ Ð½Ðµ Ð¼Ð¾Ð¶ÐµÑ‚ Ð±Ñ‹Ñ‚ÑŒ Ð¾Ñ‚Ñ€Ð¸Ñ†Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ð¼\n";
 			continue;
 		}
 		break;
 	}
 	while (1) {
-		std::cout << "Ââåäèòå êîë-âî àíòèáèîòèêà: ";
+		std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»-Ð²Ð¾ Ð°Ð½Ñ‚Ð¸Ð±Ð¸Ð¾Ñ‚Ð¸ÐºÐ°: ";
 		std::cin >> countAnti;
 		if (countAnti < 0) {
-			std::cout << "Êîë-âî àíòèáèîòèêà íå ìîæåò áûòü îòðèöàòåëüíûì\n";
+			std::cout << "ÐšÐ¾Ð»-Ð²Ð¾ Ð°Ð½Ñ‚Ð¸Ð±Ð¸Ð¾Ñ‚Ð¸ÐºÐ° Ð½Ðµ Ð¼Ð¾Ð¶ÐµÑ‚ Ð±Ñ‹Ñ‚ÑŒ Ð¾Ñ‚Ñ€Ð¸Ñ†Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ð¼\n";
 			continue;
 		}
 		break;
 	}
 	for (int i = 0; countBacter >= 0 && (countAnti * 10 - i*countAnti) >= 0; countBacter = (countBacter * 2) - (countAnti * 10 - i++*countAnti))
 	{
-		std::cout << "Ïîñëå " << i << " ÷àñà áàêòåðèé îñòàëîñü " << countBacter << "\n";
+		std::cout << "ÐŸÐ¾ÑÐ»Ðµ " << i << " Ñ‡Ð°ÑÐ° Ð±Ð°ÐºÑ‚ÐµÑ€Ð¸Ð¹ Ð¾ÑÑ‚Ð°Ð»Ð¾ÑÑŒ " << countBacter << "\n";
 	}
 }

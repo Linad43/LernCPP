@@ -1,4 +1,4 @@
-#include "Main.h"
+ï»¿#include "Main.h"
 
 void reduct(int* a, int* b) {
 	int buf = nod(*a, *b);
@@ -29,23 +29,23 @@ void printFract(int a, int b) {
 }
 
 void ex9() {
-	std::cout << "9. Êàëüêóëÿòîð äðîáåé (Áîíóñ)" << std::endl;
+	std::cout << "9. ÐšÐ°Ð»ÑŒÐºÑƒÐ»ÑÑ‚Ð¾Ñ€ Ð´Ñ€Ð¾Ð±ÐµÐ¹ (Ð‘Ð¾Ð½ÑƒÑ)" << std::endl;
 
 	int aUp, bUp, aDown, bDown, resultUp, resultDown;
 
-	std::cout << "Ïåðâàÿ äðîáü: \n";
-	std::cout << "×èñëèòåëü: ";
+	std::cout << "ÐŸÐµÑ€Ð²Ð°Ñ Ð´Ñ€Ð¾Ð±ÑŒ: \n";
+	std::cout << "Ð§Ð¸ÑÐ»Ð¸Ñ‚ÐµÐ»ÑŒ: ";
 	std::cin >> aUp;
-	std::cout << "Çíàìåíàòåëü: ";
+	std::cout << "Ð—Ð½Ð°Ð¼ÐµÐ½Ð°Ñ‚ÐµÐ»ÑŒ: ";
 	std::cin >> aDown;
 	printf("%d / %d\n", aUp, aDown);
 	reduct(&aUp, &aDown);
 	printf("%d / %d\n", aUp, aDown);
 
-	std::cout << "Âòîðàÿ äðîáü: \n";
-	std::cout << "×èñëèòåëü: ";
+	std::cout << "Ð’Ñ‚Ð¾Ñ€Ð°Ñ Ð´Ñ€Ð¾Ð±ÑŒ: \n";
+	std::cout << "Ð§Ð¸ÑÐ»Ð¸Ñ‚ÐµÐ»ÑŒ: ";
 	std::cin >> bUp;
-	std::cout << "Çíàìåíàòåëü: ";
+	std::cout << "Ð—Ð½Ð°Ð¼ÐµÐ½Ð°Ñ‚ÐµÐ»ÑŒ: ";
 	std::cin >> bDown;
 	printf("%d / %d\n", bUp, bDown);
 	reduct(&bUp, &bDown);

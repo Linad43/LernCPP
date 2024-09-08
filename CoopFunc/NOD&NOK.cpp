@@ -1,4 +1,4 @@
-#include "CoopFunc.h"
+﻿#include "CoopFunc.h"
 
 int nod(int a, int b) {
 	a = abs(a);

@@ -1,18 +1,18 @@
-#include "Main.h"
+ï»¿#include "Main.h"
 
 void ex7() {
-	std::cout << "7. Ñîêðàùåíèå äðîáè" << std::endl;
+	std::cout << "7. Ð¡Ð¾ÐºÑ€Ð°Ñ‰ÐµÐ½Ð¸Ðµ Ð´Ñ€Ð¾Ð±Ð¸" << std::endl;
 	int num, denom;
-	std::cout << "Ââåäèòå ÷èñëèòåëü: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¸Ñ‚ÐµÐ»ÑŒ: ";
 	std::cin >> num;
-	std::cout << "Ââåäèòå çíàìåíàòåëü: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð·Ð½Ð°Ð¼ÐµÐ½Ð°Ñ‚ÐµÐ»ÑŒ: ";
 	std::cin >> denom;
 	if (denom == 0) {
-		std::cout << "Äåëåíèå íà íîëü íåâîçìîæíî\n";
+		std::cout << "Ð”ÐµÐ»ÐµÐ½Ð¸Ðµ Ð½Ð° Ð½Ð¾Ð»ÑŒ Ð½ÐµÐ²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾\n";
 		return;
 	}
 	else if (num == 0) {
-		std::cout << "Ðåçóëüòàò: 0\n";
+		std::cout << "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚: 0\n";
 		return;
 	}
 	else if (num * denom < 0) {
@@ -23,5 +23,5 @@ void ex7() {
 		num = abs(num);
 		denom = abs(denom);
 	}
-	std::cout << "Ðåçóëüòàò: " << num / nod(num, denom) << " / " << denom / nod(num, denom) << std::endl;
+	std::cout << "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚: " << num / nod(num, denom) << " / " << denom / nod(num, denom) << std::endl;
 }

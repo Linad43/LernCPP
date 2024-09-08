@@ -1,9 +1,9 @@
-#include "Main.h"
+ï»¿#include "Main.h"
 
 void ex4() {
-	std::cout << "4. Ðàìêà.\n";
+	std::cout << "4. Ð Ð°Ð¼ÐºÐ°.\n";
 	int width, heigth;
-	std::cout << "Ââåäèòå øèðèíó è âûñîòó ðàìêè: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑˆÐ¸Ñ€Ð¸Ð½Ñƒ Ð¸ Ð²Ñ‹ÑÐ¾Ñ‚Ñƒ Ñ€Ð°Ð¼ÐºÐ¸: ";
 	std::cin >> width >> heigth;
 	for (int i = 0; i < heigth; i++) {
 		for (int j = 0; j < width; j++) {

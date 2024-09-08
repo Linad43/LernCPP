@@ -1,14 +1,14 @@
-#include "Main.h"
+ï»¿#include "Main.h"
 
 void ex8() {
-	std::cout << "8. Óãàäàé ÷èñëî" << std::endl;
+	std::cout << "8. Ð£Ð³Ð°Ð´Ð°Ð¹ Ñ‡Ð¸ÑÐ»Ð¾" << std::endl;
 	int i, min = 0, max = 64, choise;
 	while (1) {
 		i = random(min, max-1);
 		while (1) {
-			std::cout << "Çàäóìàííîå ÷èñëî áîëüøå " << i << "? \n";
-			std::cout << "1. Äà\n";
-			std::cout << "2. Íåò\n";
+			std::cout << "Ð—Ð°Ð´ÑƒÐ¼Ð°Ð½Ð½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð±Ð¾Ð»ÑŒÑˆÐµ " << i << "? \n";
+			std::cout << "1. Ð”Ð°\n";
+			std::cout << "2. ÐÐµÑ‚\n";
 			std::cin >> choise;
 			if (choise > 0 && choise < 3) {
 				break;
@@ -22,7 +22,7 @@ void ex8() {
 			max = i;
 		}
 		if (max - min == 0) {
-			std::cout << "Âàøå ÷èñëî: " << min << std::endl;
+			std::cout << "Ð’Ð°ÑˆÐµ Ñ‡Ð¸ÑÐ»Ð¾: " << min << std::endl;
 			break;
 		}
 	}

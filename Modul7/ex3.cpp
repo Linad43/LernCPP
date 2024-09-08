@@ -1,26 +1,26 @@
-#include "Main.h"
+ï»¿#include "Main.h"
 #include<conio.h>
 #define SIZE_X 15
 #define SIZE_Y 20
 
 void ex3() {
-	std::cout << "3. Êðàñíûé Ìàðñ.\n";
-	std::cout << "Äëÿ çàâåðøåíèÿ ââåäèòå \"q\"\n";
+	std::cout << "3. ÐšÑ€Ð°ÑÐ½Ñ‹Ð¹ ÐœÐ°Ñ€Ñ.\n";
+	std::cout << "Ð”Ð»Ñ Ð·Ð°Ð²ÐµÑ€ÑˆÐµÐ½Ð¸Ñ Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ \"q\"\n";
 	int pos_x = SIZE_X / 2;
 	int pos_y = SIZE_Y / 2;
 	char input;
 	int flag = 1;
 	while (flag) {
-		std::cout << "Ìàðñîõîä íàõîäèòñÿ íà ïîçèöèè ";
+		std::cout << "ÐœÐ°Ñ€ÑÐ¾Ñ…Ð¾Ð´ Ð½Ð°Ñ…Ð¾Ð´Ð¸Ñ‚ÑÑ Ð½Ð° Ð¿Ð¾Ð·Ð¸Ñ†Ð¸Ð¸ ";
 		std::cout << pos_x << ", " << pos_y << ", ";
-		std::cout << "ââåäèòå êîìàíäó:\n";
+		std::cout << "Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð¼Ð°Ð½Ð´Ñƒ:\n";
 		input = _getch();
 		std::cout << input << "\n";
 		switch (input)
 		{
 		case 'q':
 			flag = 0;
-			std::cout << "Çàâåðøåíèå ðàáîòû ïðîãðàììû\n";
+			std::cout << "Ð—Ð°Ð²ÐµÑ€ÑˆÐµÐ½Ð¸Ðµ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ñ‹\n";
 			break;
 		case 'w':
 			(pos_y + 1) <= SIZE_Y ? pos_y++ : pos_y;
@@ -35,7 +35,7 @@ void ex3() {
 			(pos_x - 1) >= 1 ? pos_x-- : pos_x;
 			break;
 		default:
-			std::cout << "Íåâåðíûå âõîäíûå ïàðàìåòðû!\n";
+			std::cout << "ÐÐµÐ²ÐµÑ€Ð½Ñ‹Ðµ Ð²Ñ…Ð¾Ð´Ð½Ñ‹Ðµ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ñ‹!\n";
 			break;
 		}
 	}

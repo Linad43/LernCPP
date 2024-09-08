@@ -1,53 +1,53 @@
-#include "Main.h"
+ï»¿#include "Main.h"
 #define AMERICANO_WATER 300
 #define LATTE_WATER 30
 #define LATTE_MILK 270
 
 void ex2() {
-	std::cout << "2. Êîôåìàøèíà.\n";
+	std::cout << "2. ÐšÐ¾Ñ„ÐµÐ¼Ð°ÑˆÐ¸Ð½Ð°.\n";
 	int water, milk, choise, countLatte, countAmericano;
-	std::cout << "Ââåäèòå êîëè÷åñòâî âîäû â ìë: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð²Ð¾Ð´Ñ‹ Ð² Ð¼Ð»: ";
 	std::cin >> water;
-	std::cout << "Ââåäèòå êîëè÷åñòâî ìîëîêà â ìë: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¼Ð¾Ð»Ð¾ÐºÐ° Ð² Ð¼Ð»: ";
 	std::cin >> milk;
 	countLatte = countAmericano = 0;
 	while (water >= AMERICANO_WATER || water >= LATTE_WATER && milk >= LATTE_MILK) {
-		std::cout << "Âûáåðèòå íàïèòîê (1 - àìåðèêàíî, 2 - ëàòòå): ";
+		std::cout << "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð½Ð°Ð¿Ð¸Ñ‚Ð¾Ðº (1 - Ð°Ð¼ÐµÑ€Ð¸ÐºÐ°Ð½Ð¾, 2 - Ð»Ð°Ñ‚Ñ‚Ðµ): ";
 		std::cin >> choise;
 		switch (choise)
 		{
 		case 1:
 			if (water < AMERICANO_WATER) {
-				std::cout << "Íåäîñòàòî÷íî âîäû\n";
+				std::cout << "ÐÐµÐ´Ð¾ÑÑ‚Ð°Ñ‚Ð¾Ñ‡Ð½Ð¾ Ð²Ð¾Ð´Ñ‹\n";
 				break;
 			}
-			std::cout << "Âàø íàïèòîê ãîòîâ\n";
+			std::cout << "Ð’Ð°Ñˆ Ð½Ð°Ð¿Ð¸Ñ‚Ð¾Ðº Ð³Ð¾Ñ‚Ð¾Ð²\n";
 			countAmericano++;
 			water -= AMERICANO_WATER;
 			break;
 		case 2:
 			if (water < LATTE_WATER) {
-				std::cout << "Íåäîñòàòî÷íî âîäû\n";
+				std::cout << "ÐÐµÐ´Ð¾ÑÑ‚Ð°Ñ‚Ð¾Ñ‡Ð½Ð¾ Ð²Ð¾Ð´Ñ‹\n";
 				break;
 			}
 			if (milk < LATTE_MILK) {
-				std::cout << "Íåäîñòàòî÷íî ìîëîêà\n";
+				std::cout << "ÐÐµÐ´Ð¾ÑÑ‚Ð°Ñ‚Ð¾Ñ‡Ð½Ð¾ Ð¼Ð¾Ð»Ð¾ÐºÐ°\n";
 				break;
 			}
-			std::cout << "Âàø íàïèòîê ãîòîâ\n";
+			std::cout << "Ð’Ð°Ñˆ Ð½Ð°Ð¿Ð¸Ñ‚Ð¾Ðº Ð³Ð¾Ñ‚Ð¾Ð²\n";
 			countLatte++;
 			water -= LATTE_WATER;
 			milk -= LATTE_MILK;
 			break;
 		default:
-			std::cout << "Ââåäåííî íå êîððåêòíîå çíà÷åíèå, ïîïðîáóéòå ñíîâà\n";
+			std::cout << "Ð’Ð²ÐµÐ´ÐµÐ½Ð½Ð¾ Ð½Ðµ ÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ, Ð¿Ð¾Ð¿Ñ€Ð¾Ð±ÑƒÐ¹Ñ‚Ðµ ÑÐ½Ð¾Ð²Ð°\n";
 			break;
 		}
 	}
-	std::cout << "***Îò÷åò***\n";
-	std::cout << "Èíãðèäèåíòîâ îñòàëîñü:\n";
-	std::cout << "\tÂîäà: " << water << " ìë\n";
-	std::cout << "\tÌîëîêî: " << milk << " ìë\n";
-	std::cout << "Êðóæåê àìåðèêàíî ïðèãîòîâëåíî: " << countAmericano << "\n";
-	std::cout << "Êðóæåê ëàòòå ïðèãîòîâëåíî: " << countLatte << "\n";
+	std::cout << "***ÐžÑ‚Ñ‡ÐµÑ‚***\n";
+	std::cout << "Ð˜Ð½Ð³Ñ€Ð¸Ð´Ð¸ÐµÐ½Ñ‚Ð¾Ð² Ð¾ÑÑ‚Ð°Ð»Ð¾ÑÑŒ:\n";
+	std::cout << "\tÐ’Ð¾Ð´Ð°: " << water << " Ð¼Ð»\n";
+	std::cout << "\tÐœÐ¾Ð»Ð¾ÐºÐ¾: " << milk << " Ð¼Ð»\n";
+	std::cout << "ÐšÑ€ÑƒÐ¶ÐµÐº Ð°Ð¼ÐµÑ€Ð¸ÐºÐ°Ð½Ð¾ Ð¿Ñ€Ð¸Ð³Ð¾Ñ‚Ð¾Ð²Ð»ÐµÐ½Ð¾: " << countAmericano << "\n";
+	std::cout << "ÐšÑ€ÑƒÐ¶ÐµÐº Ð»Ð°Ñ‚Ñ‚Ðµ Ð¿Ñ€Ð¸Ð³Ð¾Ñ‚Ð¾Ð²Ð»ÐµÐ½Ð¾: " << countLatte << "\n";
 }
