@@ -19,6 +19,7 @@ void printMidKolon(int countSum, int countMid, char mid, char all) {
 }
 
 void ex6() {
+	std::cout << "6. Важные объявления.\n";
 	int countSum, countMid;
 	while (1) {
 		while (1) {

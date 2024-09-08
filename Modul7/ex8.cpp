@@ -1,10 +1,9 @@
-#include "Main.h"
+ï»¿#include "Main.h"
 
 void ex8() {
+	std::cout << "8. ÐÐ»Ð¾Ñ‡ÐºÐ°*.\n";
 	int height, flag;
-	std::cout << "8. ¨ëî÷êà*.\n";
-
-	std::cout << "Ââåäèòå âûñîòó åëî÷êè: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²Ñ‹ÑÐ¾Ñ‚Ñƒ ÐµÐ»Ð¾Ñ‡ÐºÐ¸: ";
 	std::cin >> height;
 
 	if (height == 0) {

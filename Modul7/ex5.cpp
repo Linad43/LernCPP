@@ -4,6 +4,7 @@
 
 
 void ex5() {
+	std::cout << "5. Координатные оси.\n";
 	for (int i = 0; i < SIZE_Y; i++) {
 		for (int j = 0; j < SIZE_X; j++) {
 			if (i == (SIZE_Y / 2)) {
