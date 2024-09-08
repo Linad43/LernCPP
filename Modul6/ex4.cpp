@@ -1,15 +1,15 @@
-#include "Main.h"
+ï»¿#include "Main.h"
 
 void ex4() {
-	std::cout << "4. Ñ÷àñòëèâûé áèëåòèê" << std::endl;
+	std::cout << "4. Ð¡Ñ‡Ð°ÑÑ‚Ð»Ð¸Ð²Ñ‹Ð¹ Ð±Ð¸Ð»ÐµÑ‚Ð¸Ðº" << std::endl;
 	int numTiket;
 	int lenthNumTiket = 0;
 	int buf, i = 0;
 	while (1) {
-		std::cout << "Ââåäèòå íîìåð áèëåòà: ";
+		std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ Ð±Ð¸Ð»ÐµÑ‚Ð°: ";
 		std::cin >> numTiket;
 		if (numTiket < 0) {
-			std::cout << "Íîìåð áèëåòà íå ìîæåò áûòü îòðèöàòåëüíûì\n";
+			std::cout << "ÐÐ¾Ð¼ÐµÑ€ Ð±Ð¸Ð»ÐµÑ‚Ð° Ð½Ðµ Ð¼Ð¾Ð¶ÐµÑ‚ Ð±Ñ‹Ñ‚ÑŒ Ð¾Ñ‚Ñ€Ð¸Ñ†Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ð¼\n";
 		}
 		else break;
 	}
@@ -38,9 +38,9 @@ void ex4() {
 		i++;
 	}
 	if (sumBegin == sumEnd) {
-		std::cout << "Áèëåò ñ÷àñòëèâûé!\n";
+		std::cout << "Ð‘Ð¸Ð»ÐµÑ‚ ÑÑ‡Ð°ÑÑ‚Ð»Ð¸Ð²Ñ‹Ð¹!\n";
 	}
 	else {
-		std::cout << "Ïîâåç¸ò â ñëåäóþùèé ðàç!\n";
+		std::cout << "ÐŸÐ¾Ð²ÐµÐ·Ñ‘Ñ‚ Ð² ÑÐ»ÐµÐ´ÑƒÑŽÑ‰Ð¸Ð¹ Ñ€Ð°Ð·!\n";
 	}
 }
