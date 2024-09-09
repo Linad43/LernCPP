@@ -1,5 +1,10 @@
-#include "Main.h"
+ï»¿#include "Main.h"
 
 int main() {
-	std::cout << "×òî òî íà ðóññêîì";
+	rusText();
+	std::cout << "Ð§Ñ‚Ð¾ Ñ‚Ð¾ Ð½Ð° Ñ€ÑƒÑÑÐºÐ¾Ð¼\n";
+	unsigned char text[20];
+	std::cin >> text;
+	std::cout << "Ð’Ñ‹ Ð²Ð²ÐµÐ»Ð¸:\n";
+	std::cout << text;
 }

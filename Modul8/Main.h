@@ -1,2 +1,3 @@
-#pragma once
-#include "C:\Users\Linad\source\repos\LernCPP\CoopFunc\CoopFunc.h"
+﻿#pragma once
+#include "..\CoopFunc\CoopFunc.h"
+void rusText();
