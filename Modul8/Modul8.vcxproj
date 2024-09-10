@@ -127,7 +127,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\CoopFunc\CreateVar.cpp" />
+    <ClCompile Include="..\CoopFunc\Random.cpp" />
     <ClCompile Include="..\CoopFunc\RusText.cpp" />
+    <ClCompile Include="ex1.cpp" />
+    <ClCompile Include="ex2.cpp" />
+    <ClCompile Include="ex3.cpp" />
+    <ClCompile Include="ex4.cpp" />
+    <ClCompile Include="ex5.cpp" />
+    <ClCompile Include="ex6.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
