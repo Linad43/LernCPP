@@ -130,6 +130,7 @@
     <ClInclude Include="CoopFunc.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CreateVar.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="NOD&amp;NOK.cpp" />
     <ClCompile Include="Random.cpp" />

@@ -11,7 +11,12 @@ void ex8() {
 	}
 	else if (height > 0) {
 		for (int j = 0; j < height; j++) {
-			printMidKolon(height*2-1, j*2+1, '#', ' ');
+			printMidKolon(height * 2 - 1, j * 2 + 1, '#', ' ');
+		}
+	}
+	else {
+		for (int j = -height; j > 0; j--) {
+			printMidKolon(-height * 2 - 1, j * 2 - 1, '#', ' ');
 		}
 	}
 }
